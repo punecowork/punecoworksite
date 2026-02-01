@@ -3,6 +3,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/Card';
 import { ContactForm } from '@/components/ui/Form';
 import { generateMetadata, generateServiceSchema, generateFAQSchema, generateBreadcrumbSchema } from '@/lib/seo';
 import Script from 'next/script';
+import Link from 'next/link';
 
 export const metadata = generateMetadata({
   title: 'GST Registration in Pune | Get GSTIN in 7-10 Days | Pune Cowork',

@@ -1,6 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/Card';
 import { Button } from '@/components/ui/Button';
 import { generateMetadata } from '@/lib/seo';
+import Link from 'next/link';
 
 export const metadata = generateMetadata({
   title: 'Our Locations - Virtual Office Addresses in Pune | Pune Cowork',
