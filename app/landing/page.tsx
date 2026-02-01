@@ -1,15 +1,18 @@
+'use client';
+
 import { Button } from '@/components/ui/Button';
 import { ContactForm } from '@/components/ui/Form';
-import { generateMetadata } from '@/lib/seo';
-
-export const metadata = generateMetadata({
-  title: 'Virtual Office Pune ₹899 | GST Registration in 24 Hours',
-  description: 'Get GST-registered virtual office in Pune near Hinjewadi IT Park. Setup in 24 hours. No deposit. Mail handling included. Starting ₹899/month only!',
-  keywords: ['virtual office pune price', 'cheap virtual office hinjewadi', 'gst office address pune'],
-  noindex: false,
-});
+import { useEffect } from 'react';
 
 export default function LandingPage() {
+  // Set page metadata via document
+  useEffect(() => {
+    document.title = 'Virtual Office Pune ₹899 | GST Registration in 24 Hours';
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute('content', 'Get GST-registered virtual office in Pune near Hinjewadi IT Park. Setup in 24 hours. No deposit. Mail handling included. Starting ₹899/month only!');
+    }
+  }, []);
   return (
     <>
       {/* Remove header/footer for focused conversion */}
