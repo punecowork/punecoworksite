@@ -80,12 +80,16 @@ export default function GSTRegistrationPage() {
               </div>
             </div>
             <div className="flex flex-wrap justify-center gap-4">
-              <Button href="/contact?service=gst" size="lg" variant="secondary">
-                Get Started Now
-              </Button>
-              <Button href="tel:+919876543210" size="lg" variant="outline" className="bg-white/10 border-white text-white hover:bg-white hover:text-primary-700">
-                📞 Call Now
-              </Button>
+              <Link href="/contact?service=gst">
+                <Button size="lg" variant="secondary">
+                  Get Started Now
+                </Button>
+              </Link>
+              <a href="tel:+919876543210">
+                <Button size="lg" variant="outline" className="bg-white/10 border-white text-white hover:bg-white hover:text-primary-700">
+                  📞 Call Now
+                </Button>
+              </a>
             </div>
           </div>
         </div>
@@ -342,9 +346,11 @@ export default function GSTRegistrationPage() {
                       <span>Mail handling (10/month)</span>
                     </li>
                   </ul>
-                  <Button href="/contact?plan=basic" className="w-full mt-6">
-                    Get Started
-                  </Button>
+                  <Link href="/contact?plan=basic">
+                    <Button className="w-full mt-6">
+                      Get Started
+                    </Button>
+                  </Link>
                 </CardContent>
               </Card>
 
@@ -378,9 +384,11 @@ export default function GSTRegistrationPage() {
                       <span>2 meeting room hours</span>
                     </li>
                   </ul>
-                  <Button href="/contact?plan=professional" className="w-full mt-6">
-                    Get Started
-                  </Button>
+                  <Link href="/contact?plan=professional">
+                    <Button className="w-full mt-6">
+                      Get Started
+                    </Button>
+                  </Link>
                 </CardContent>
               </Card>
 
@@ -411,9 +419,11 @@ export default function GSTRegistrationPage() {
                       <span>Dedicated phone line</span>
                     </li>
                   </ul>
-                  <Button href="/contact?plan=premium" className="w-full mt-6">
-                    Get Started
-                  </Button>
+                  <Link href="/contact?plan=premium">
+                    <Button className="w-full mt-6">
+                      Get Started
+                    </Button>
+                  </Link>
                 </CardContent>
               </Card>
             </div>
@@ -519,17 +529,21 @@ export default function GSTRegistrationPage() {
                 <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6">
                   <h3 className="font-bold text-xl mb-2">📞 Call Us Now</h3>
                   <p className="text-blue-100 mb-4">Speak to our GST expert</p>
-                  <Button href="tel:+919876543210" variant="secondary" className="w-full">
-                    +91 98765 43210
-                  </Button>
+                  <a href="tel:+919876543210">
+                    <Button variant="secondary" className="w-full">
+                      +91 98765 43210
+                    </Button>
+                  </a>
                 </div>
 
                 <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6">
                   <h3 className="font-bold text-xl mb-2">💬 WhatsApp Us</h3>
                   <p className="text-blue-100 mb-4">Get instant response</p>
-                  <Button href="https://wa.me/919876543210" variant="secondary" className="w-full">
-                    Start Chat
-                  </Button>
+                  <a href="https://wa.me/919876543210" target="_blank" rel="noopener noreferrer">
+                    <Button variant="secondary" className="w-full">
+                      Start Chat
+                    </Button>
+                  </a>
                 </div>
               </div>
             </div>

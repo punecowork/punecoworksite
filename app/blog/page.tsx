@@ -221,12 +221,16 @@ export default function BlogPage() {
               Get your virtual office setup in 24 hours
             </p>
             <div className="flex flex-wrap justify-center gap-4">
-              <Button href="/pricing" size="lg">
-                View Pricing
-              </Button>
-              <Button href="/contact" size="lg" variant="outline">
-                Schedule Consultation
-              </Button>
+              <Link href="/pricing">
+                <Button size="lg">
+                  View Pricing
+                </Button>
+              </Link>
+              <Link href="/contact">
+                <Button size="lg" variant="outline">
+                  Schedule Consultation
+                </Button>
+              </Link>
             </div>
           </div>
         </div>

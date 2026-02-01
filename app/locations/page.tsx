@@ -19,9 +19,11 @@ export default function LocationsPage() {
             <p className="text-2xl text-blue-100 mb-8">
               Premium business addresses strategically located across Pune's business hubs
             </p>
-            <Button href="/contact" size="lg" variant="secondary">
-              Book a Visit
-            </Button>
+            <Link href="/contact">
+              <Button size="lg" variant="secondary">
+                Book a Visit
+              </Button>
+            </Link>
           </div>
         </div>
       </section>
@@ -268,9 +270,11 @@ export default function LocationsPage() {
               <p className="text-gray-600 mb-4">
                 Want to be notified when new locations open?
               </p>
-              <Button href="/contact" size="lg">
-                Join Waitlist
-              </Button>
+              <Link href="/contact">
+                <Button size="lg">
+                  Join Waitlist
+                </Button>
+              </Link>
             </div>
           </div>
         </div>
@@ -285,12 +289,16 @@ export default function LocationsPage() {
               Visit our office or start your virtual office setup online in minutes
             </p>
             <div className="flex flex-wrap justify-center gap-4">
-              <Button href="/contact" size="lg" variant="secondary">
-                Schedule a Visit
-              </Button>
-              <Button href="/pricing" size="lg" variant="outline" className="bg-white/10 border-white text-white hover:bg-white hover:text-primary-700">
-                View Pricing
-              </Button>
+              <Link href="/contact">
+                <Button size="lg" variant="secondary">
+                  Schedule a Visit
+                </Button>
+              </Link>
+              <Link href="/pricing">
+                <Button size="lg" variant="outline" className="bg-white/10 border-white text-white hover:bg-white hover:text-primary-700">
+                  View Pricing
+                </Button>
+              </Link>
             </div>
           </div>
         </div>
