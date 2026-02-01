@@ -1,0 +1,10 @@
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Allow: /
+
+# Disallow admin/internal pages
+Disallow: /api/
+Disallow: /admin/
+
+# Sitemap
+Sitemap: https://punecowork.com/sitemap.xml
